@@ -6,10 +6,12 @@ main{
 
 header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: 40%; 
-    column-gap: 1.5rem;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
     color: white;
+    text-shadow:2px 3px 3px black
 }
 
 .posicao_header{
@@ -17,20 +19,47 @@ header{
     position: relative;
 }
 
-.posicao_input{
-    z-index: 10;
-    position: relative;
-    display: flex;
-    align-items: center;
-    column-gap: 1.5rem;
-    color: white;
-    font-size: larger;
-}
-
 #imgLogo{
     border-radius: 100%;
     box-shadow: 15px 5px 15px black;
 }
+
+.posicao_input{
+    z-index: 10;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    margin-left: 5%;
+    width: 60%;
+    color: white;
+    font-size: larger;
+    text-shadow:2px 3px 3px black;
+   
+   
+}
+
+#dataInput{
+    padding-right: 10%;
+    padding-left: 10%;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 2px blue;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.411);
+    box-shadow: 15px 5px 20px black;
+    
+}
+
+#buttonInput{
+    border-radius: 10px;
+    border: solid 2px red;
+    background-color: rgba(255, 0, 0, 0.521);
+    box-shadow: 15px 5px 20px black;
+    color: white;
+}
+
 
 #videoDeFundo{
     position: fixed;

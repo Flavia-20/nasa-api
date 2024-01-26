@@ -11,16 +11,16 @@
     <header>
         <img id="imgLogo" class="posicao_header" src="./img/LOgoBlack.png">
         <h1  class="posicao_header" >Nasa Web</h1>
+        
+        <div class="posicao_input">
+            <label for="dataInput">Digite a data (YYYY-MM-DD):</label>
+            <input type="number" id="dataInput" placeholder="Exemplo: 2024-01-21" autofocus>
+            <button id="buttonInput" onclick="searchAPODdata()">Buscar</button>
+        </div>
     </header>
     
     <div>
         <video src="./video/video (1080p).mp4" autoplay loop muted type="video.mp4" id="videoDeFundo"></video>
-    </div>
-
-    <div class="posicao_input">
-        <label for="dataInput">Digite a data (YYYY-MM-DD):</label>
-        <input type="text" id="dataInput">
-        <button onclick="searchAPODdata()">Buscar</button>
     </div>
 
    <div id="infos">
