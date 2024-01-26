@@ -9,11 +9,22 @@ header{
     align-items: center;
     margin-left: 40%; 
     column-gap: 1.5rem;
-    
+    color: white;
 }
 
 .posicao_header{
     z-index: 10;
+    position: relative;
+}
+
+.posicao_input{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    color: white;
+    font-size: larger;
 }
 
 #imgLogo{
