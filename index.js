@@ -1,4 +1,8 @@
 
+
+const api =  fetch(`https://api.nasa.gov/planetary/apod?api_key=ePkNzfj5jdhKGff0gtUVMIUjr45pasIh3ErGefEN&date`)
+console.log(api)
+
 function searchAPODdata() {
     // Obtém o valor digitado pelo usuário no input
     const dataInput = document.getElementById('dataInput').value;
@@ -21,16 +25,20 @@ function searchAPODdata() {
             let image = document.createElement('img');
             image.setAttribute('id', 'img');
             image.src = json.url;
-            image.setAttribute('width', '100%');
+            image.setAttribute('width', '70%');
+            image.setAttribute('height', '100%');
+            image.style.padding = '20px';
             div.append(image);
 
             let title = document.createElement('p');
             title.innerHTML = json.title + '<br>' + json.date;
             title.style.fontWeight = 'bolder';
+            title.setAttribute('height', '100vh')
             div.append(title);
 
             let info = document.createElement('p');
             info.innerHTML = json.explanation;
+            info.setAttribute('height', '100vh')
             div.append(info);
 
             // Adiciona os elementos ao documento
