@@ -1,7 +1,6 @@
 
-
-const api =  fetch(`https://api.nasa.gov/planetary/apod?api_key=ePkNzfj5jdhKGff0gtUVMIUjr45pasIh3ErGefEN&date`)
-console.log(api)
+/*const api =  fetch(`https://api.nasa.gov/planetary/apod?api_key=ePkNzfj5jdhKGff0gtUVMIUjr45pasIh3ErGefEN&date`)
+console.log(api)*/
 
 function searchAPODdata() {
     // Obtém o valor digitado pelo usuário no input
@@ -38,7 +37,8 @@ function searchAPODdata() {
 
             let info = document.createElement('p');
             info.innerHTML = json.explanation;
-            info.setAttribute('height', '100vh')
+            info.setAttribute('height', '100vh');
+            info.style.fontSize = 'large';
             div.append(info);
 
             // Adiciona os elementos ao documento
