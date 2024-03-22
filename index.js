@@ -1,6 +1,6 @@
 
 /*const api =  fetch(`https://api.nasa.gov/planetary/apod?api_key=ePkNzfj5jdhKGff0gtUVMIUjr45pasIh3ErGefEN&date`)
-console.log(api)*/
+ console.log(api)*/
 
 function searchAPODdata() {
     // Obtém o valor digitado pelo usuário no input
